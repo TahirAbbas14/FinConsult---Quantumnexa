@@ -33,13 +33,13 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="bg-navy-900 p-3 rounded-lg">
-              <Shield className="h-6 w-6 text-white" />
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <div className="bg-navy-900 p-2 sm:p-3 rounded-lg">
+              <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
             </div>
             <div>
-              <span className="text-2xl font-bold text-navy-900">FinConsult</span>
-              <div className="text-xs text-gray-600 font-medium">Financial Planning</div>
+              <span className="text-lg sm:text-2xl font-bold text-navy-900">FinConsult</span>
+              <div className="text-xs text-gray-600 font-medium hidden sm:block">Financial Planning</div>
             </div>
           </div>
 

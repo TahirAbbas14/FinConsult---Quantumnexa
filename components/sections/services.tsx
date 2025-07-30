@@ -88,7 +88,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon
             const colors = colorClasses[service.color as keyof typeof colorClasses]
@@ -96,7 +96,7 @@ export default function ServicesSection() {
             return (
               <Card
                 key={index}
-                className={`${colors.bg} border-2 ${colors.border} ${colors.hover} transition-all duration-500 hover:scale-105 relative overflow-hidden group`}
+                className={`${colors.bg} border-2 ${colors.border} ${colors.hover} transition-all duration-500 hover:scale-102 relative overflow-hidden group`}
               >
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-5">
@@ -105,11 +105,11 @@ export default function ServicesSection() {
                 </div>
 
                 <CardHeader className="pb-4 relative z-10">
-                  <div className={`${colors.icon} p-4 rounded-xl w-fit mb-6 shadow-lg`}>
-                    <IconComponent className="h-10 w-10" />
+                  <div className={`${colors.icon} p-3 sm:p-4 rounded-xl w-fit mb-4 sm:mb-6 shadow-lg`}>
+                    <IconComponent className="h-8 w-8 sm:h-10 sm:w-10" />
                   </div>
-                  <CardTitle className={`text-2xl font-bold ${colors.text} mb-4`}>{service.title}</CardTitle>
-                  <p className="text-gray-700 leading-relaxed text-lg">{service.description}</p>
+                  <CardTitle className={`text-xl sm:text-2xl font-bold ${colors.text} mb-4`}>{service.title}</CardTitle>
+                  <p className="text-gray-700 leading-relaxed text-base sm:text-lg">{service.description}</p>
                 </CardHeader>
                 <CardContent className="pt-0 relative z-10">
                   <div className="space-y-3 mb-8">

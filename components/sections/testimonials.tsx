@@ -61,11 +61,11 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-102 relative overflow-hidden group bg-gradient-to-br from-white to-gray-50"
+              className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-102 relative overflow-hidden group bg-gradient-to-br from-white to-gray-50 h-full"
             >
               {/* Background Pattern */}
               <div className="absolute inset-0 opacity-5">
